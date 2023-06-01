@@ -1,9 +1,16 @@
 package aloneKiosk.kiosk;
 
 public class Kiosk {
-    Menu menu = new Menu();
-    ProductMenu productMenu = new ProductMenu();
-    Data data = new Data();
+    private Menu menu;
+    private ProductMenu productMenu;
+    private Data data;
+    private Order order;
+    public Kiosk(){
+        menu = new Menu();
+        productMenu = new ProductMenu();
+        data = new Data();
+        order = new Order();
+    }
     public void start(){
         while(true){
             int choice = menu.showMainMenu();
@@ -18,6 +25,9 @@ public class Kiosk {
                 case 3:
                     productMenu.showDrinksMenu();
                     break;
+                case 4:
+                    order.showOrder();
+
             }
 
         }

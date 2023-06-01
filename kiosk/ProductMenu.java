@@ -60,10 +60,6 @@ public class ProductMenu extends Menu{
         System.out.println("5. Hamburger     | W 5.4 | 비프패티를 기반으로 야채가 들어간 기본버거");
         System.out.println();
 
-        System.out.println("[ ORDER MENU ]");
-        System.out.println("6. Order       | 장바구니를 확인 후 주문합니다.");
-        System.out.println("7. Cancel      | 진행중인 주문을 취소합니다.");
-
         choice = sc.nextLine();
         return Integer.parseInt(choice);
     }
@@ -77,10 +73,6 @@ public class ProductMenu extends Menu{
         System.out.println("3. Red Bean Shake       | W 6.5 | 신선한 커스터드와 함께 우유와 레드빈이 블렌딩 된 시즈널 쉐이크");
         System.out.println("4. Floats               | W 5.9 | 루트 비어, 퍼플 카우, 크림시클");
         System.out.println();
-
-        System.out.println("[ ORDER MENU ]");
-        System.out.println("5. Order       | 장바구니를 확인 후 주문합니다.");
-        System.out.println("6. Cancel      | 진행중인 주문을 취소합니다.");
 
         choice = sc.nextLine();
         return Integer.parseInt(choice);
@@ -97,10 +89,6 @@ public class ProductMenu extends Menu{
         System.out.println("5. Abita Root Bear          | W 4.4 | 청량감 있는 독특한 미국식 무알콜 탄산음료");
         System.out.println("6. Bottled Water            | W 1.0 | 지리산 암반대수층으로 만든 프리미엄 성수");
         System.out.println();
-
-        System.out.println("[ ORDER MENU ]");
-        System.out.println("7. Order       | 장바구니를 확인 후 주문합니다.");
-        System.out.println("8. Cancel      | 진행중인 주문을 취소합니다.");
 
         choice = sc.nextLine();
         return Integer.parseInt(choice);

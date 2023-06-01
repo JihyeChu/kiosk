@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Data {
-    public Buy buy = new Buy();
     private String detailMenu;
     private int choice;
+    Order order = new Order();
 
     private List<Menu> mainMenu(){
         List<Menu> mainMenu = new ArrayList<Menu>();
@@ -28,7 +28,7 @@ public class Data {
         burgersMenu.add(new ProductMenu("Shroom Burger", 9.4, "몬스터 치즈와 체다 치즈로 속을 채운 베지테리안 버거"));
         burgersMenu.add(new ProductMenu("Cheeseburger", 6.9, "포테이토 번과 비프패티, 치즈가 토핑된 치즈버거"));
         burgersMenu.add(new ProductMenu("Hamburger", 5.4, "비프패티를 기반으로 야채가 들어간 기본버거"));
-        buy.showList(burgersMenu.get(choice-1).getName(), burgersMenu.get(choice-1).getPrice(), burgersMenu.get(choice-1).getExplanation());
+        order.showList(burgersMenu.get(choice-1).getName(), burgersMenu.get(choice-1).getPrice(), burgersMenu.get(choice-1).getExplanation());
     }
 
 
